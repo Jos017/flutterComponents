@@ -5,7 +5,7 @@ class Listview1Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final options = const [
+    const options = [
       'Megaman',
       'Metal Gear',
       'Super Smash Bros',
@@ -14,7 +14,7 @@ class Listview1Screen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Appbar'),
+        title: const Text('List view 1'),
       ),
       body: ListView(
         children: [
