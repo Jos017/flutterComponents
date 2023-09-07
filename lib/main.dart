@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_components/screens/listview1_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,17 +10,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Appbar'),
-        ),
-        body: const Center(
-          child: Text('This is the body'),
-        ),
-      ),
+      home: Listview1Screen(),
     );
   }
 }
