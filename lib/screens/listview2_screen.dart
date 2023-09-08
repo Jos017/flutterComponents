@@ -14,13 +14,22 @@ class Listview2Screen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.indigo,
+        elevation: 0,
         title: const Text('List view 2'),
       ),
       body: ListView.separated(
         itemCount: options.length,
         itemBuilder: (context, index) => ListTile(
           title: Text(options[index]),
-          trailing: const Icon(Icons.keyboard_arrow_right),
+          trailing: const Icon(
+            Icons.keyboard_arrow_right,
+            color: Colors.indigo,
+          ),
+          onTap: () {
+            final game = options[index];
+            print(game);
+          },
         ),
         separatorBuilder: (context, index) => const Divider(),
       ),
