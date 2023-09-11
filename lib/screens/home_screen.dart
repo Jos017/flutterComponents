@@ -10,8 +10,6 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home'),
-        elevation: 0,
-        backgroundColor: Colors.indigo,
       ),
       body: ListView.separated(
         itemBuilder: (context, index) => ListTile(
